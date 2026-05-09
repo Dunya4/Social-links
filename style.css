@@ -77,3 +77,9 @@ li {
     margin: 0rem 1rem;
     font-weight: bold;
 }
+li:hover {
+   background-color: hsl(75, 94%, 57%) ;
+   border: hsl(75, 94%, 57%) ;
+   color: hsl(0, 0%, 12%);
+    cursor: pointer;
+}
