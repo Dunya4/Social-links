@@ -2,27 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Figtree", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+
 body {
-    background-color: hsl(0, 0%, 8%);
-    width: 100%;
-    max-width: 1440px;
-    height: 100vh;
+   background-color: var(--Grey-900);
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
 }
 
 .container {
-    max-width: 100%;
-    width: 20rem;
-    /* height: 31.5rem; */
-    border-radius: 10px;
-    border: 1px solid hsl(0, 0%, 12%);
-    margin: 70px auto;
-    background-color: hsl(0, 0%, 12%);
+    width: 100%;
+    max-width: 24rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: var(--Grey-800);
     display: flex;
     flex-direction: column;
-    padding: 30px 10px 30px 10px;
+    gap: 1.5rem;
 }
 
 .blog {
@@ -30,57 +38,62 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 1.5rem;
 
 }
 
 img {
     object-fit: cover;
     border-radius: 50%;
-    width: 80px;
+    width: 100%;
+    max-width: 5rem;
 
 }
 
 h1 {
-    color: hsl(0, 0%, 100%);
-    font-weight: bold;
-    font-size: 22px;
-    padding: 18px 0px 2px 0px;
+    color: var(--White);
+    font-weight: 500;
+    font-size: 1.4rem;
 }
 
-.p_green {
-    color: hsl(75, 94%, 57%);
-    font-size: 14px;
-    font-weight: 600;
-    padding: 8px 0px 18px 0px;
+.location  {
+    color:var(--Green);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: -1rem;
+
 }
 
 p {
-    color: hsl(0, 0%, 100%);
-    font-size: 13px;
-    padding: 2px 0px 20px 0px;
-    font-weight: normal;
+    color: var(--White);
+    font-size: 0.9rem;
+}
+
+.blog_list{
+    width: 100%;
 }
 
 ul {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 1rem;
     list-style: none;
 }
 
 li {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 20%);
-    padding: 10px;
-    border-radius: 5px;
+    color:var(--White);
+    background-color: var(--Grey-700);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
     text-align: center;
-    margin: 0rem 1rem;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 1rem;
 }
+
 li:hover {
-   background-color: hsl(75, 94%, 57%) ;
-   border: hsl(75, 94%, 57%) ;
-   color: hsl(0, 0%, 12%);
+    background-color: var(--Green);
+    color: var(--Grey-900);
     cursor: pointer;
 }
+
+
